@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Таблица данных</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th data-sort="fname">Имя</th>
+          <th data-sort="lname">Фамилия</th>
+          <th data-sort="tel">Телефон</th>
+          <th data-sort="address">Адрес</th>
+          <th data-sort="city">Город</th>
+          <th data-sort="state">Штат</th>
+          <th data-sort="zip">ZIP</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+
+    <div id="pagination"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

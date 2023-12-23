@@ -1,0 +1,16 @@
+#element {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+@keyframes changeSize {
+  from {
+    width: 100px;
+    height: 100px;
+  }
+  to {
+    width: 300px;
+    height: 300px;
+  }
+}
